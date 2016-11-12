@@ -10,12 +10,14 @@ function init() {
 	// Loads the button into the theButton variable, so that we can use it later.
 	var theButton = document.getElementById("the-button");
 
-	// Uses an onclick
-	theButton.addEventListener("click",addCookie);
+	// Uses a method called "addEventListener" with
+	// a type of "click" to launch the buttonAction function. 
+	// See how it's used on the "theButton" variable we made earlier.
+	theButton.addEventListener("click", buttonAction);
 
 }
 
-function addCookie() {
+function buttonAction() {
 
 	alert("button clicked");
 }
